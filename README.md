@@ -41,7 +41,7 @@ For example if there is an image subfolder under your extension project workspac
 
 Right click on a folder in your project and you'll get the 'indexerator' option
 
-![indexerator](screenshot.jpg)
+![indexerator](https://gitlab.com/aviadhemo/screenshot/raw/master/screenshot.jpg)
 
 
 
