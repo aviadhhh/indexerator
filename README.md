@@ -2,6 +2,7 @@
 
 ## Features
 
+vscode index generator
 vscode extension that auto generate index.ts/index.js file that export all current folder
 
 ```
