@@ -39,19 +39,10 @@ Describe specific features of your extension including screenshots of your exten
 
 For example if there is an image subfolder under your extension project workspace:
 
-\!\[feature X\]\(images/feature-x.png\)
-
 Right click on a folder in your project and you'll get the 'indexerator' option
 
 ![indexerator](screenshot.jpg)
 
-## Requirements
-
-If you have any requirements or dependencies, add a section describing those and how to install and configure them.
-
-## Extension Settings
-
-Include if your extension adds any VS Code settings through the `contributes.configuration` extension point.
 
 
 ## Known Issues

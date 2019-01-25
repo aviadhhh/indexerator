@@ -1,3 +1,4 @@
+import { relative, sep } from 'path';
 import { commands, ExtensionContext, window } from 'vscode';
 
 import { FileService } from './files-service/file.service';
@@ -5,11 +6,11 @@ import { FileService } from './files-service/file.service';
 
 export function activate(context: ExtensionContext) {
 	let disposable = commands.registerCommand('extension.indexerator', (fullPath) => {
-		window.showInformationMessage(`indexerator creates ${fullPath.fsPath}`);
-		console.log(`Congratulations, your "indexerator" command has execute! ${fullPath}`);
-		const fileHandler = new FileService('ts');
+		const folderName = relative(process.cwd(), fullPath.fsPath).split(sep);
+		window.setStatusBarMessage(`indexerator >index in ${folderName[folderName.length - 1]}`);
+		const fileService = new FileService();
 
-		fileHandler.generateExportFile(fullPath.fsPath);
+		fileService.generateExportFile(fullPath.fsPath);
 	});
 
 	context.subscriptions.push(disposable);
