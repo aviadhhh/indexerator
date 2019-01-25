@@ -2,7 +2,7 @@
 	"name": "indexerator",
 	"displayName": "indexerator",
 	"description": "This vscode extension create index file in current directory to export everything from it",
-	"publisher": "indexerator",
+	"publisher": "hemo",
 	"version": "1.0.0",
 	"engines": {
 		"vscode": "^1.30.0"
