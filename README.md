@@ -28,8 +28,8 @@ project
 and index.ts will look like:
 ```javascript
 export * from './file011';
-export * from 'file012';
-export * from 'file011';
+export * from './file012';
+export * from './file011';
 
 ```
 
