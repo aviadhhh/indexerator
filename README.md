@@ -50,6 +50,6 @@ No bugs, feel free to tell me about bugs.
 
 First release, any suggestion are welcome.
 
-created by me- Aviad Hemo.
+created by Aviad Hemo.
 
 **Enjoy!**
