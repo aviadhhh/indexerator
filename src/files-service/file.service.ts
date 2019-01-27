@@ -24,7 +24,7 @@ export class FileService {
             const extension = extname(foundedFile);
             if(!extension) return;
 
-            const content = files.filter(file => file.endsWith(extension))
+            const content = files.filter(file => file.endsWith(extension) && file !== `${this.indexName}${extension}`)
             .map(file => `${this.prefix}${this.exportFileName(file)}';\n`).join('');
 
             writeFile(`${path}/${this.indexName}${extension}`, content, (writreErr) => {
