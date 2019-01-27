@@ -10,7 +10,11 @@ export function activate(context: ExtensionContext) {
 		window.setStatusBarMessage(`indexerator >index in ${folderName[folderName.length - 1]}`);
 		const fileService = new FileService();
 
-		fileService.generateExportFile(fullPath.fsPath);
+		try {
+			fileService.generateExportFile(fullPath.fsPath);
+		} catch(err) {
+			window.setStatusBarMessage('indexerator failed create file');
+		}
 	});
 
 	context.subscriptions.push(disposable);

@@ -19,7 +19,7 @@ export class FileService {
             if(err) throw(err);
 
             const foundedFile = files.find(file => file.endsWith(Extensions.js) || file.endsWith(Extensions.ts));
-            if(!foundedFile) return;
+            if(!foundedFile) throw(err);
 
             const extension = extname(foundedFile);
             if(!extension) return;
