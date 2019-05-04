@@ -1,7 +1,20 @@
 # Change Log
+## whats new?
+## 1.4.1
+
+- added error notification when file creation failed.
+- you can change the quote style in the settings- default style is single quote
+```json
+"indexerator.quote" : "double"
+```
+or 
+```json
+"indexerator.quote" : "single"
+```
+
+
 ## 1.4.0
 
-## whats new?
 - you can change the file name that indexerator creates on settings.json (the default is index if you won't change it),
 ```json
 "indexerator.exportFileName": "public_api"

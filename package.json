@@ -3,7 +3,7 @@
 	"displayName": "indexerator",
 	"description": "This vscode extension create index file in current directory to export everything from it",
 	"publisher": "hemo",
-	"version": "1.3.0",
+	"version": "1.4.0",
 	"engines": {
 		"vscode": "^1.30.0"
 	},
@@ -36,11 +36,20 @@
 			]
 		},
 		"configuration": {
-			"type": "string",
-			"title": "Indexerator export file name",
-			"indexerator.exportFileName": {
-				"type": "string",
-				"default": "index"
+			"type": "object",
+			"title": "Indexerator configuration",
+			"properties": {
+				"indexerator.exportFileName": {
+					"type": "string",
+					"default": "index",
+					"description": "The file name that indexerator will create"
+				},
+				"indexerator.quotes": {
+					"type": "string",
+					"enum": ["single", "double"],
+					"default": "single",
+					"description": "The quote style to use in indexerator export file"
+				}
 			}
 		}
 	},
