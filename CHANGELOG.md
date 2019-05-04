@@ -1,9 +1,18 @@
 # Change Log
-### bugfixes
+## 1.4.0
+
+## whats new?
+- you can change the file name that indexerator creates on settings.json (the default is index if you won't change it),
+```json
+"indexerator.exportFileName": "public_api"
+```
+
+### bugfixes 
+## 1.3.0
 
 fix extesion crash when the folder is empty [#1](https://github.com/aviadhhh/indexerator/issues/1) - Tahnks to [jm06487](https://github.com/jm06487) for reporting it.
 
 
 
 ## Comming Next
-- In the next version I will add an option to change name of the file to be create by indexerator in the settings.
+- Open to suggestions.

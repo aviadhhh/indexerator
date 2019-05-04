@@ -9,11 +9,12 @@ export enum Extensions {
 }
 
 export class FileService {
-    private readonly indexName = 'index';
+    private readonly indexName: string;
     private readonly prefix = `export * from './`;
     private readonly eventEmitter: EventEmitter;
 
-    constructor() {
+    constructor(fileName?: string) {
+        this.indexName = fileName || 'index';
         this.eventEmitter = new EventEmitter();
     }
 
