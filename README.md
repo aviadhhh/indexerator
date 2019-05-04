@@ -2,8 +2,23 @@
 
 ## Features
 
-vscode index generator
-vscode extension that auto generate index.ts/index.js file that export all current folder
+* vscode index generator.  
+vscode extension that auto generate ```index.ts``` or ```index.js``` file that export all current folder
+
+File name can be change in settings.
+Example:
+```json
+"indexerator.exportFileName": "public_api"
+```
+
+- you can change the quote style in the settings- default style is single quote
+```json
+"indexerator.quote" : "double"
+```
+or 
+```json
+"indexerator.quote" : "single"
+```
 
 ```
 project
@@ -44,11 +59,13 @@ Right click on a folder in your project and you'll get the 'indexerator' option
 
 ## Known Issues
 
-No bugs, feel free to tell me about bugs.
+No bugs, feel free to report on bugs or create a PR that fix it.
 
 ## Release Notes
 
 Fixed- Extension crashes on empty folders.
+
+[Changelog](CHANGELOG.md)
 
 created by Aviad Hemo.
 
