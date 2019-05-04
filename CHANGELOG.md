@@ -1,6 +1,6 @@
 # Change Log
 ## whats new?
-## 1.4.1
+## 1.5.1
 
 - added error notification when file creation failed.
 - you can change the quote style in the settings- default style is single quote
