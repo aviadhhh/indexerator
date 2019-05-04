@@ -48,7 +48,7 @@ No bugs, feel free to tell me about bugs.
 
 ## Release Notes
 
-First release, any suggestion are welcome.
+Fixed- Extension crashes on empty folders.
 
 created by Aviad Hemo.
 
