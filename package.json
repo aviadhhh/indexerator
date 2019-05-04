@@ -34,6 +34,14 @@
 					"group": "indexerator@1"
 				}
 			]
+		},
+		"configuration": {
+			"type": "string",
+			"title": "Indexerator export file name",
+			"indexerator.exportFileName": {
+				"type": "string",
+				"default": "index"
+			}
 		}
 	},
 	"scripts": {

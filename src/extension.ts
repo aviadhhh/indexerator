@@ -1,12 +1,14 @@
 import { relative, sep } from 'path';
-import { commands, ExtensionContext, window } from 'vscode';
+import { commands, ExtensionContext, window, workspace } from 'vscode';
 
 import { FileService } from './files-service/file.service';
 
 
 export function activate(context: ExtensionContext) {
 	let disposable = commands.registerCommand('extension.indexerator', (fullPath) => {
-		const fileService = new FileService();
+		// get file name from settings- index as default file name.
+		const fileName = workspace.getConfiguration().get('indexerator.exportFileName') as string;
+		const fileService = new FileService(fileName);
 
 		fileService.on('error', () => {
 				window.showErrorMessage(`Unable to create ${fileService.indexFileName}`)
