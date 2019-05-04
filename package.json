@@ -3,7 +3,7 @@
 	"displayName": "indexerator",
 	"description": "This vscode extension create index file in current directory to export everything from it",
 	"publisher": "hemo",
-	"version": "1.4.0",
+	"version": "1.5.0",
 	"engines": {
 		"vscode": "^1.30.0"
 	},
@@ -46,7 +46,10 @@
 				},
 				"indexerator.quotes": {
 					"type": "string",
-					"enum": ["single", "double"],
+					"enum": [
+						"single",
+						"double"
+					],
 					"default": "single",
 					"description": "The quote style to use in indexerator export file"
 				}
